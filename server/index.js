@@ -31,6 +31,7 @@ mongoose
   .then(async () => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
+    /* adding data to db once */
     // await mongoose.connection.db.dropDatabase();
     // KPI.insertMany(kpis);
   })
