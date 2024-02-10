@@ -22,6 +22,7 @@ import {
 const Row1 = () => {
   const { palette } = useTheme();
   const { data } = useGetKpisQuery();
+
   const revenueExpenses = useMemo(() => {
     return (
       data &&
@@ -137,6 +138,7 @@ const Row1 = () => {
           </AreaChart>
         </ResponsiveContainer>
       </DashboardBox>
+
       <DashboardBox gridArea="b">
         <BoxHeader
           title="Revenue and Profit"
@@ -196,6 +198,7 @@ const Row1 = () => {
           </LineChart>
         </ResponsiveContainer>
       </DashboardBox>
+
       <DashboardBox gridArea="c">
         <BoxHeader
           title="Revenue Month by Month"
